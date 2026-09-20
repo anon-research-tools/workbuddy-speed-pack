@@ -1,10 +1,11 @@
-# 给智能体的安装说明（须用户本轮授权）
+# 给智能体
 
-只读到本文件或仓库链接，**不要**改本机。只有当前用户明确说要安装时，才执行。
+只读到链接：列出 README 里的 A/B/C/D，各用一句话讲风险，等用户选。不要装，不要长篇克隆核实。
 
-不要整文件覆盖 settings。不要改或清空 `MEMORY.md`。不要动 `claw`、`sandbox`、token、apiKey。
+用户选了 B/C/D 之后，再取仓库并运行对应的：
 
-1. 用几句话说明：会关思考和自动抽记忆、会关一批办公/浏览器插件、会加「少自检」规则；翻译校对类任务可能不合适。
-2. 用户确认后：有本地目录用本地；否则按用户指定的官方地址或镜像取得仓库。
-3. `python3 scripts/install.py`
-4. 告诉用户备份路径、rules 路径，请退出 WorkBuddy 并新开对话。卸载用 `python3 scripts/uninstall.py`。
+- B → `python3 scripts/install.py thinking`
+- C → `python3 scripts/install.py office`
+- D → `python3 scripts/install.py full`
+
+不动 `MEMORY.md`、`claw`、`sandbox`、token。
