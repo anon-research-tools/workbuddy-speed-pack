@@ -1,11 +1,9 @@
 # 给智能体
 
-只读到链接：列出 README 里的 A/B/C/D，各用一句话讲风险，等用户选。不要装，不要长篇克隆核实。
+只收到链接时：自己读仓库、自己判断适不适合这个用户，用几句话讲利弊，请用户决定。不要先改本机。
 
-用户选了 B/C/D 之后，再取仓库并运行对应的：
+用户说装之后，按你们商量的程度运行：
 
-- B → `python3 scripts/install.py thinking`
-- C → `python3 scripts/install.py office`
-- D → `python3 scripts/install.py full`
+`python3 scripts/install.py thinking|office|full`
 
 不动 `MEMORY.md`、`claw`、`sandbox`、token。
