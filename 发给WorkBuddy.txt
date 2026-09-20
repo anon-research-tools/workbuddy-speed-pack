@@ -1,4 +1,2 @@
-请先看 https://github.com/anon-research-tools/workbuddy-speed-pack 的 README，用几句话告诉我装上会改什么、有什么代价。
-不要因为看到链接就改本机。
-我确认要装的时候，再按 README 运行 python3 scripts/install.py（国内可用 ghfast.top 镜像 clone）。
-保留 claw 和 sandbox，不要改 MEMORY.md。
+请看这个仓库，按 README 只列出 A/B/C/D 四个选项和风险，让我选。不要改本机。
+https://github.com/anon-research-tools/workbuddy-speed-pack
