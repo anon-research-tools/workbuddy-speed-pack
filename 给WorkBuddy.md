@@ -4,6 +4,6 @@
 
 用户说装之后，按你们商量的程度运行：
 
-`python3 scripts/install.py thinking|office|full`
+`python3 scripts/install.py 轻装|办公|极速`
 
 不动 `MEMORY.md`、`claw`、`sandbox`、token。
