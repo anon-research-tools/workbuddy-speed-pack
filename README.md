@@ -4,7 +4,16 @@
 
 你的任务是给**当前这台电脑**安装全局提速，不是写作业。
 
-1. Clone 或下载本仓库，进入根目录。
+国内打不开 `github.com` 时，**不要放弃**。改走镜像（2026-09-20 本机已通）：
+
+- 读 README：`https://ghfast.top/https://raw.githubusercontent.com/anon-research-tools/workbuddy-speed-pack/main/README.md`
+- Clone：`git clone --depth 1 https://ghfast.top/https://github.com/anon-research-tools/workbuddy-speed-pack.git`
+- Zip：`https://ghfast.top/https://github.com/anon-research-tools/workbuddy-speed-pack/archive/refs/heads/main.zip`
+- 备选前缀：把 `ghfast.top` 换成 `gh-proxy.com`
+
+用户若已给出本机目录，优先用本地路径，不要再联网。
+
+1. 取得仓库后进入根目录。
 2. 运行：`python3 scripts/install.py`
 3. 脚本只会：
    - 备份并**合并** `hard-settings.json` 到 `~/.workbuddy/settings.json`（关默认思考、关自动抽记忆、关一批无关插件）
