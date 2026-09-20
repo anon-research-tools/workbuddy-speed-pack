@@ -2,9 +2,9 @@
 """Merge speed settings and/or alwaysApply rules. Never clobber claw/sandbox/MEMORY.md.
 
 Profiles:
-  thinking  — thinking off, minimal effort, defer tools (no memory/plugin/rules)
-  office    — thinking + memory off + extra plugins off; keep Tencent Docs/PPT/sheet
-  full      — office + also turn off Docs/PPT/sheet + install alwaysApply rules
+  轻装  — thinking off, minimal effort, defer tools (no memory/plugin/rules)
+  办公  — 轻装 + memory off + extra plugins off; keep Tencent Docs/PPT/sheet
+  极速  — 办公 + also turn off Docs/PPT/sheet + install alwaysApply rules
 """
 
 from __future__ import annotations
@@ -61,13 +61,13 @@ def merge_settings(here: Path, profile: str) -> None:
         if key in patch:
             current[key] = patch[key]
 
-    if profile in ("office", "full"):
+    if profile in ("办公", "极速"):
         memory = dict(current.get("memory") or {})
         memory.update(patch.get("memory") or {})
         current["memory"] = memory
         plugins = dict(current.get("enabledPlugins") or {})
         for name, enabled in (patch.get("enabledPlugins") or {}).items():
-            if profile == "office" and name in KEEP_OFFICE:
+            if profile == "办公" and name in KEEP_OFFICE:
                 continue
             plugins[name] = enabled
         current["enabledPlugins"] = plugins
@@ -92,13 +92,15 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Install WorkBuddy speed pack")
     parser.add_argument(
         "profile",
-        choices=("thinking", "office", "full"),
-        help="thinking | office | full",
+        choices=("轻装", "办公", "极速", "thinking", "office", "full"),
+        help="轻装 | 办公 | 极速",
     )
     args = parser.parse_args()
+    aliases = {"thinking": "轻装", "office": "办公", "full": "极速"}
+    profile = aliases.get(args.profile, args.profile)
     here = Path(__file__).resolve().parents[1]
-    merge_settings(here, args.profile)
-    if args.profile == "full":
+    merge_settings(here, profile)
+    if profile == "极速":
         install_rules(here)
     print("done. quit WorkBuddy and start a new chat. turn off Max yourself.")
 
