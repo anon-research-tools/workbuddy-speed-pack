@@ -1,0 +1,7 @@
+请读取并执行这个仓库的 给WorkBuddy.md：
+运行 python3 scripts/install.py
+只合并 hard-settings.json 到 ~/.workbuddy/settings.json，把 rules/fast-default.md 装到用户级 rules。
+保留 claw 和 sandbox，不要改 MEMORY.md，不要整文件覆盖。
+完成后告诉我备份路径，并提醒我退出 WorkBuddy、新开对话。
+
+<把本仓库的 GitHub 地址贴在这里>

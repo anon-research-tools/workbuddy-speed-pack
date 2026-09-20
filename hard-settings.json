@@ -1,0 +1,24 @@
+{
+  "_comment": "只含 WorkBuddy 会读的硬开关。合并进 ~/.workbuddy/settings.json，禁止整文件覆盖。",
+  "alwaysThinkingEnabled": false,
+  "reasoningEffort": "minimal",
+  "autoCompactEnabled": true,
+  "promptSuggestionEnabled": false,
+  "deferToolLoading": true,
+  "memory": {
+    "autoMemoryEnabled": false,
+    "typedMemory": false,
+    "relevanceSelection": false,
+    "memoryExtraction": false
+  },
+  "enabledPlugins": {
+    "weixinpay@workbuddy-builtin": false,
+    "finance-data@cb_teams_marketplace": false,
+    "agent-browser@codebuddy-plugins-official": false,
+    "find-skills@codebuddy-plugins-official": false,
+    "tencent-docs-plugin@workbuddy-builtin": false,
+    "sheetagent@workbuddy-builtin": false,
+    "tencent-pptx@workbuddy-builtin": false,
+    "tencent-docx@workbuddy-builtin": false
+  }
+}
